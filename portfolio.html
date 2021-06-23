@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio of Chris</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+
+    <!-- Fonts -->
+    <link href="fonts/Roboto-Regular.ttf" rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <script src="https://kit.fontawesome.com/7ba980ac09.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="noAutoPos">
+    <nav id="navBar">
+        <p class="navBarTitle noAutoPos">Christopher Green</p>
+        <a href="index.html">Home</a>
+        <a href="#returnToTop">Portfolio</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+    </nav>
+        <!-- For Home button -->
+        <a name="returnToTop"></a>
+
+    <!-- Links to my work go here -->
+    <main>
+        <h1 class="hrTextInsert">You can find what projects I'm working on here:</h1>
+        <!-- CSS Grid to format and center elements -->
+        <nav class="grid-container">
+            <div class="container">
+                <a href="https://github.com/Christopher-Green424" target="_blank" rel="noopener">
+                    <img src="img\2048px-Octicons-mark-github.svg.png" alt="Github logo" class="containerImg">
+                    <div class="imgMiddle">
+                        <div class="imgTextbg">
+                            <p class="imgText">My Github Account</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="container">
+                <a href="https://codepen.io/christopher-green424" target="_blank" rel="noopener">
+                    <img src="img\Button-Fill-Black-Large.png" alt="CodePen logo" class="containerImg">
+                    <div class="imgMiddle">
+                        <div class="imgTextbg">
+                            <p class="imgText">My CodePen Account</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </nav>
+
+        <nav class="fccContainer">
+            <a href="https://www.freecodecamp.org/christopher-green424">
+                <img src="img\fcc_primary_large.png" alt="FreeCodeCamp logo" class="fccLogo">
+            </a>
+        </nav>
+
+        <p class="hrTextInsert">Thanks for visiting!</p>
+    </main>
+
+    <!-- Footer w/ fake email, phone number, dead links to social media go here -->
+    <footer class="footerBar">
+        <nav class="footerSocialLinks">
+            <!-- Social media links go here floated left -->
+            <a href="#" onclick="socialAlert()"><i class="fab fa-twitter-square"></i></a>
+            <a href="#" onclick="socialAlert()"><i class="fab fa-youtube-square"></i></a>
+            <a href="#" onclick="socialAlert()"><i class="fab fa-instagram-square"></i></a>
+            <a href="#" onclick="socialAlert()"><i class="fab fa-linkedin"></i></a>
+        </nav>
+
+        <div class="footerContactTxt">
+            <!-- Fake email and phone number go here floated right -->
+            <span>(888)888-8888</span>
+            <span>fake_email8888@gmail.com</span>
+        </div>
+    </footer>
+
+    <!-- Script stating social media links are fake -->
+    <script>
+        function socialAlert() {
+            alert("Hello! I'm a fake social media link!");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+/* ACCORDION CODE STARTS HERE Source: https://www.w3schools.com/howto/howto_js_accordion.asp */
+/* In study group: check how to make separate cases of accordion class without copy pasting CSS? */
+.accordion {
+    color: white;
+    cursor: pointer;
+    padding: 1.5vmax;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 2vmax;
+    text-transform: uppercase;
+    transition: 0.4s;
+  }
+
+  .active, .accordion:hover {
+    background-color: #ccc; 
+  }
+  
+  .panel {
+    padding: 0 1vmax;
+    display: none;
+    background-color: #2b2b2b;
+    overflow: hidden;
+  }
+/* ACCORDION CODE ENDS HERE */
+
+/* Modify .hrTextInsert color for panel */
+.panel .hrTextInsert:before {
+  background-image: linear-gradient(90deg, #2b2b2b, white);
+}
+
+.panel .hrTextInsert:after {
+  background-image: linear-gradient(90deg, white, #2b2b2b);
+}
+
+.embedGrid {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 600px 600px 600px;
+  margin: auto;
+}
+
+.embedGrid figcaption {
+  min-height: 120px;
+  font-size: 16px;
+  padding: 0.5vh 1vw;
+}
+.cookingPanel .embedGrid figcaption { border: 4px solid #A82323; }
+
+.cookingPanel .picGrid {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 600px 600px 600px;
+  grid-template-rows: auto auto;
+  margin: auto;
+}
+
+.cookingPanel .picGrid figcaption {
+  width: 459px;
+  min-height: 60px;
+  font-size: 16px;
+  padding: 0.5vh 1vw;
+  border: 4px solid #A82323;
+}
+
+.musicPanel .embedGrid {
+  margin: 2vh 1.5vw;
+}
+
+.bandcampGrid {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 370px 370px 370px 370px;
+  margin: 2vh 10vw;
+}
+
+.restPanel .embedGrid {
+  margin: 2vh 1.5vw;
+  grid-template-columns: 600px 600px 600px;
+  grid-template-rows: auto auto;
+}

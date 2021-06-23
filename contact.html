@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Chris!</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contact.css">
+
+    <!-- Fonts -->
+    <link href="fonts/Roboto-Regular.ttf" rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <script src="https://kit.fontawesome.com/7ba980ac09.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="noAutoPos">
+    <nav id="navBar">
+        <p class="navBarTitle noAutoPos">Christopher Green</p>
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="#returnToTop">Contact</a>
+        <a href="about.html">About</a>
+    </nav>
+        <!-- For Home button -->
+        <a name="returnToTop"></a>
+
+    <main>
+        <!-- Main contact form goes here -->
+        <form class="contactForm">
+            <fieldset><legend>Please provide your contact information:</legend>
+                <label class="nameLabel" for="nameInput">Name:</label>
+                    <input id="nameInput" type="text" placeholder="Enter your name here." required><br><br>
+
+                <label class="emailLabel" for="emailInput">Email:</label>
+                    <input id="emailInput" type="email" placeholder="Enter your email here." required><br><br>
+                    
+                <label class="phoneLabel" for="phoneInput">Phone:</label>
+                    <input type="tel" id="phoneInput" name="phone" placeholder="(123)456-7890" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+            </fieldset>
+
+            <fieldset><legend>What is your preferred contact method?</legend>
+                <input type="radio" id="callMethod" name="contactMethod" value="callMethod">
+                    <label id="callMethodLabel" for="callMethod">Call me.</label><br>
+
+                <input type="radio" id="textMethod" name="contactMethod" value="textMethod">
+                    <label id="textMethodLabel" for="textMethod">Text me.</label><br>
+
+                <input type="radio" id="emailMethod" name="contactMethod" value="emailMethod">
+                    <label id="emailMethodLabel" for="emailMethod">Email me.</label>
+            </fieldset>
+
+            <fieldset class="genderForm"><legend>Please state your pronouns:</legend>
+                <input type="radio" id="heHim" name="pronouns" value="heHim">
+                    <label id="proLabel1" for="heHim">He/Him</label><br>
+
+                <input type="radio" id="sheHer" name="pronouns" value="sheHer">
+                    <label id="proLabel2" for="sheHer">She/Her</label><br>
+
+                <input type="radio" id="theyThem" name="pronouns" value="theyThem">
+                    <label id="proLabel3" for="theyThem">They/Them</label><br>
+
+                <input type="radio" id="anyPro" name="pronouns" value="anyPro">
+                    <label id="proLabel4" for="anyPro">Any</label><br>
+
+                <input type="radio" id="notSpecify" name="pronouns" value="notSpecify">
+                    <label id="proLabel5" for="notSpecify">Prefer not to say</label>
+            </fieldset>
+
+        </form>
+        <p class="hrTextInsert">Thanks for visiting!</p>
+    </main>
+
+    <!-- Footer w/ fake email, phone number, dead links to social media go here -->
+    <footer class="footerBar">
+        <nav class="footerSocialLinks">
+            <!-- Social media links go here floated left -->
+            <a href="#" onclick="socialAlert()"><i class="fab fa-twitter-square"></i></a>
+            <a href="#" onclick="socialAlert()"><i class="fab fa-youtube-square"></i></a>
+            <a href="#" onclick="socialAlert()"><i class="fab fa-instagram-square"></i></a>
+            <a href="#" onclick="socialAlert()"><i class="fab fa-linkedin"></i></a>
+        </nav>
+
+        <div class="footerContactTxt">
+            <!-- Fake email and phone number go here floated right -->
+            <span>(888)888-8888</span>
+            <span>fake_email8888@gmail.com</span>
+        </div>
+    </footer>
+
+    <!-- Script stating social media links are fake -->
+    <script>
+        function socialAlert() {
+            alert("Hello! I'm a fake social media link!");
+        }
+    </script>
+</body>
+</html>

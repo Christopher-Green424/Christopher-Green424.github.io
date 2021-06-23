@@ -1,0 +1,151 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #5e5e5e;
+    color: white;
+    font-size: 24px;
+}
+
+.noAutoPos {
+    margin: 0;
+    padding: 0;
+}
+
+/* SCROLLBAR CODE STARTS Source: https://css-tricks.com/almanac/properties/s/scrollbar/ */
+body::-webkit-scrollbar {
+    background-image: radial-gradient(circle, #5e5e5e, #2b2b2b);
+    width: .75vw;
+    min-width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-image: radial-gradient(circle, #FFA500, #ff7b00);
+    outline: 1px solid white;
+}
+/* SCROLLBAR CODE ENDS */
+
+/* NAVBAR CODE STARTS */
+.navBarTitle {
+    color: black;
+    font-size: 2.5vmax;
+    padding: .5vmax 2vmax .5vmax 2vmax;
+    font-weight: normal;
+    text-transform: uppercase;
+    display: inline;
+    float: left;
+}
+
+#navBar {
+    z-index: 1;
+    position: -webkit-sticky;
+    position: sticky;
+    height: 4vmax;
+    width: 100%;
+    top: 0;
+    background-color: #FFA500;
+    overflow: hidden;
+    border-bottom: 4px solid white;
+}
+
+#navBar a {
+    float: right;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 1.25vmax 1em 1.25vmax;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5vmax;
+}
+
+#navBar a:hover {
+    background-color: #FF5C00;
+    color: white;
+    text-decoration: underline;
+}
+
+#navBar a:visited {
+    color: #B24000;
+}
+
+#navBar a:visited:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+#navBar a.active {
+    background-color: #FF5C00;
+    color: #0066FF;
+    text-decoration: underline;
+}
+/* NAVBAR CODE ENDS */
+
+/* HR WITH TEXT INSERT STARTS Source: https://codepen.io/HardKnocks/pen/abJRqjo?editors=1100 */
+.hrTextInsert {
+    overflow: hidden;
+    text-align: center;
+    font-size: 3vh;
+    font-weight: normal;
+}
+  
+.hrTextInsert:before, .hrTextInsert:after {
+    background-color: white;
+    content: "";
+    display: inline-block;
+    height: 5px;
+    position: relative;
+    vertical-align: middle;
+    width: 30vw;
+    margin: 0px 25px;
+}
+
+.hrTextInsert:before {
+    right: 0.5em;
+    margin-left: -50%;
+    background-image: linear-gradient(90deg, #5e5e5e, white);
+}
+
+.hrTextInsert:after {
+    left: 0.5em;
+    margin-right: -50%;
+    background-image: linear-gradient(90deg, white, #5e5e5e);
+}
+/* HR WITH TEXT INSERT ENDS */
+
+/* FOOTER CODE STARTS HERE */
+.footerBar {
+    z-index: 1;
+    height: 4vmax;
+    width: 100%;
+    bottom: 0;
+    background-color: #FFA500;
+    overflow: hidden;
+    border-top: 4px solid white;
+}
+
+.footerContactTxt {
+    color: black;
+    display: block;
+    text-align: center;
+    float: right;
+    font-size: 1.5vmax;
+    padding: 1vmax 2vmax;
+}
+.footerContactTxt span { padding-left: 2vmax; }
+
+.footerSocialLinks {
+    display: block;
+    text-align: center;
+    float: left;
+    padding: 0.5vmax 2vmax;
+}
+
+.footerSocialLinks i {
+    color: black;
+    padding-right: 1vmax;
+    font-size: 3vmax;
+}
+/* FOOTER CODE ENDS HERE */
